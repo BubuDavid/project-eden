@@ -1,0 +1,13 @@
+.cards__section {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #0F1123;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.cards__section.grid {
+	padding: 2rem;
+}

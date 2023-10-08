@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.card__container {
+	position: relative;
+	width: 300px; /* Adjust as needed */
+	height: 400px; /* Adjust as needed */
+	overflow: hidden;
+	/* border-radius: 10px;  */
+	transition: transform 0.3s, background-color 0.3s;
+	outline: 15px solid white;
+	padding: 10px;
+}
+
+.card__container:hover .card__background {
+	filter: blur(8px);
+	background-color: rgba(23, 107, 135, 0.5);
+}
+
+.card__title {
+	text-align: center;
+	color: white;
+}
+
+.card__background {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: filter 0.3s ease-out;
+}
+
+.card__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center; /* Centers the menu vertically */
+	justify-content: flex-start; /* Aligns the menu to the start (left) */
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+	transition: opacity 0.3s;
+	overflow: hidden;
+}
+
+.card__container:hover .card__overlay {
+	opacity: 1;
+}
+
+.card__menu {
+	list-style: none;
+	width: 100%;
+}
+
+.card__menu--item {
+	margin-bottom: 0.6rem;
+	font-family: 'Bebas Neue';
+	padding: 1.2rem 20px;
+	width: 120%;
+	background-color: #04364A;
+	transition: background-color 0.3s ease-in 0, transform 0.3s ease-in 0;
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-weight: 400;
+	transform: translateX(-160%); /* Start off the screen */
+	color: white;
+}
+
+.card__menu--item:nth-child(1) {
+	font-size: 1.5rem;
+	background-color: #176B87;
+	transition: background-color 0.3s ease-in 0s, transform 0.3s ease-in 0.1s;
+}
+.card__menu--item:nth-child(2) {
+	transition: background-color 0.3s ease-in 0s, transform 0.3s ease-in 0.2s;
+}
+.card__menu--item:nth-child(3) {
+	transition: background-color 0.3s ease-in 0s, transform 0.3s ease-in 0.3s;
+}
+.card__menu--item:nth-child(4) {
+	transition: background-color 0.3s ease-in 0s, transform 0.3s ease-in 0.4s;
+}
+
+.card__container:hover .card__menu--item {
+	transform: translateX(-5px); /* Slide in when card is hovered */
+}
+
+.card__menu--item:hover {
+	background-color: #176B87;
+}
+
+.card__menu--link {
+	color: white;
+	text-decoration: none;
+}
+
+/* Secondary */
+
+.card__container.red .card__menu--item:nth-child(1) {
+	font-size: 1.5rem;
+	background-color: #F92E42;
+	transition: background-color 0.3s ease-in 0s, transform 0.3s ease-in 0.1s;
+}
+
+.card__container.red .card__menu--item {
+	background-color: rgba(52,0,5,0.88);
+}
+
+.card__container.red .card__menu--item:hover {
+	background-color: #F92E42;
+}
