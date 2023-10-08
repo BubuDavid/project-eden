@@ -7,7 +7,7 @@ function App() {
     view, planetID
   } = useStore()
 
-  if (view && planetID === undefined) return <MainView />
+  if (view && planetID === null) return <MainView />
   return (
     <>
       {!view || view === 'main' ? <MainView /> : null}
