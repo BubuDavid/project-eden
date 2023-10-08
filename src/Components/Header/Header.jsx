@@ -6,8 +6,9 @@ const Header = () => {
 			<nav className="header__navbar">
 				<div className="navbar__logo">
 					<img src='https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg' alt='logo img'className='navbar__logo--img'/>
-					<p className='navbar__logo--text'>Proyecto dinamita</p>
+					<p className='navbar__logo--text'>Proyect Eden</p>
 				</div>
+				{/*
 				<div className='navbar__menu'>
 					<ul className='menu__list'>
 						<li className='list__item'><a href='#home' className='list__item--link'>Home</a></li>
@@ -15,6 +16,7 @@ const Header = () => {
 						<li className='list__item'><a href='#projects' className='list__item--link'>Projects</a></li>
 					</ul>
 				</div>
+				*/}
 			</nav>
 		</header>
 	)

@@ -1,10 +1,12 @@
+import { useState } from "react"
 import MainView from "./Views/MainView"
 
 function App() {
+  const [view, setView] = useState('main')
   return (
-  <>
-    <MainView />
-  </>
+    <>
+      {!view || view === 'main' ? <MainView /> : null}
+    </>
   )
 }
 

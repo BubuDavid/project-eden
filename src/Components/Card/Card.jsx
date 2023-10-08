@@ -5,7 +5,7 @@ const Card = ({ title, link1, link2, link3, link4, imgURL, secondary}) => {
 	if (secondary)
 		extraClass = 'red'
 	return (
-		<div className={'card__container ' + extraClass}>
+		<div className={`card__container ${extraClass}`}>
 			<h1 className='card__title'>{ title }</h1>
 			{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 			<div className='card__background' style={{backgroundImage: `url(${imgURL})`}}></div>

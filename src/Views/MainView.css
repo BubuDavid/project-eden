@@ -29,3 +29,10 @@
   padding: 0.8rem 0;
   font-size: 1.3rem;
 }
+
+@media screen and (max-width: 1160px) {
+  .main__view--bg {
+    height: 100vh;
+    width: auto;
+  }
+}

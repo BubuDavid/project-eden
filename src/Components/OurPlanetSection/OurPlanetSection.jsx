@@ -10,7 +10,7 @@ const OurPlanetSection = () => {
 				link2 = '#'
 				link3 = '#'
 				link4 = '#'
-				imgURL = 'https://i.imgur.com/uTmO3gm.png'
+				imgURL = 'https://i.imgur.com/Vd9oSEr.png'
 			/>
 		</div>
 	)

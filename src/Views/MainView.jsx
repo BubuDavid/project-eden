@@ -23,9 +23,9 @@ const MainView = () => {
         O explora más exoplanetas
       </section>
       <CardsSection grid = {true}>
-        {planets.map((planet, index) => (
+        {planets.map(planet => (
           <Card 
-            key={index}
+            key = {planet.title}
             title = {planet.title}
             link1 = {planet.link1}
             link2 = {planet.link2}

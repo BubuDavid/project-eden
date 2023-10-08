@@ -2,8 +2,8 @@
 
 .card__container {
 	position: relative;
-	width: 300px; /* Adjust as needed */
-	height: 400px; /* Adjust as needed */
+	width: 291.1725px; /* Adjust as needed */
+	height: 450px; /* Adjust as needed */
 	overflow: hidden;
 	/* border-radius: 10px;  */
 	transition: transform 0.3s, background-color 0.3s;
@@ -22,6 +22,9 @@
 }
 
 .card__background {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	background-size: contain;
@@ -59,7 +62,7 @@
 	font-family: 'Bebas Neue';
 	padding: 1.2rem 20px;
 	width: 120%;
-	background-color: #04364A;
+	background-color: #618264;
 	transition: background-color 0.3s ease-in 0, transform 0.3s ease-in 0;
 	cursor: pointer;
 	font-size: 1.1rem;
@@ -70,7 +73,7 @@
 
 .card__menu--item:nth-child(1) {
 	font-size: 1.5rem;
-	background-color: #176B87;
+	background-color: #79AC78;
 	transition: background-color 0.3s ease-in 0s, transform 0.3s ease-in 0.1s;
 }
 .card__menu--item:nth-child(2) {
@@ -88,7 +91,7 @@
 }
 
 .card__menu--item:hover {
-	background-color: #176B87;
+	background-color: #79AC78;
 }
 
 .card__menu--link {
@@ -97,6 +100,10 @@
 }
 
 /* Secondary */
+
+.card__container.red {
+	margin: 0 3rem 3rem 0;
+}
 
 .card__container.red .card__menu--item:nth-child(1) {
 	font-size: 1.5rem;
