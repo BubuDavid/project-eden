@@ -1,12 +1,13 @@
 import './Card.css'
 
-const Card = ({ title, link1, link2, link3, link4, imgURL, secondary}) => {
+const Card = ({ planetID, link1, link2, link3, link4, imgURL, secondary}) => {
 	let extraClass = ''
 	if (secondary)
 		extraClass = 'red'
+
 	return (
 		<div className={`card__container ${extraClass}`}>
-			<h1 className='card__title'>{ title }</h1>
+			<h1 className='card__title'>{ planetID }</h1>
 			{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 			<div className='card__background' style={{backgroundImage: `url(${imgURL})`}}></div>
 			<div className='card__overlay'>

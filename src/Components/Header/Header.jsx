@@ -1,12 +1,14 @@
+import {useStore} from '../../hooks/useStore'
 import './Header.css'
 
-const Header = () => {
+const Header = ({ bg }) => {
+	const extraClass = bg ? 'bg' : null
+	const {restartApp} = useStore()
 	return (
-		<header className="header">
+		<header className={`header ${extraClass}`}>
 			<nav className="header__navbar">
-				<div className="navbar__logo">
-					<img src='https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg' alt='logo img'className='navbar__logo--img'/>
-					<p className='navbar__logo--text'>Proyect Eden</p>
+				<div className="navbar__logo" onClick={() => restartApp()}>
+					<img src='https://i.imgur.com/GlN1vGN.jpg' alt='logo img'className='navbar__logo--img'/>
 				</div>
 				{/*
 				<div className='navbar__menu'>

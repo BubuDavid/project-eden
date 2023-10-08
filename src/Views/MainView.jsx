@@ -22,10 +22,10 @@ const MainView = () => {
       <section className='main__mini-hero red'>
         O explora más exoplanetas
       </section>
-      <CardsSection grid = {true}>
-        {planets.map(planet => (
+      <CardsSection grid = {true} key={1}>
+        {planets.map((planet, key) => (
           <Card 
-            key = {planet.title}
+            key = {key}
             title = {planet.title}
             link1 = {planet.link1}
             link2 = {planet.link2}
