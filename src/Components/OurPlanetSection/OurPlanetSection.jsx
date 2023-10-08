@@ -7,10 +7,10 @@ const OurPlanetSection = () => {
 			<Card 
 				panetName = 'VIZERYON-05'
 				imgURL = 'https://i.imgur.com/Vd9oSEr.png'
-				link1= '/?view=details&planetID=4'
-				link2= '/?view=details&planetID=4'
-				link3= '/?view=details&planetID=4'
-				link4= '/?view=details&planetID=4'
+				link1= '?view=details&planetID=4'
+				link2= '?view=details&planetID=4'
+				link3= '?view=details&planetID=4'
+				link4= '?view=details&planetID=4'
 			/>
 		</div>
 	)
