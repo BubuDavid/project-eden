@@ -11,7 +11,7 @@
 
 .header__navbar {
 	display: flex;
-	justify-content: space-between; /* This will space out your logo and menu */
+	justify-content: center; /* This will space out your logo and menu */
 	align-items: center; /* Vertically align items */
 	padding: 10px 20px;
 }
@@ -33,8 +33,8 @@
 }
 
 .navbar__logo--img {
-	height: 40px; /* Adjust as necessary */
-	margin-right: 10px; /* Creates a gap between the image and the text */
+	height: 50px; 
+	margin-right: 10px; 
 }
 
 .navbar__logo--text {

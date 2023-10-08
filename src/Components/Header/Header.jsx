@@ -8,7 +8,7 @@ const Header = ({ bg }) => {
 		<header className={`header ${extraClass}`}>
 			<nav className="header__navbar">
 				<div className="navbar__logo" onClick={() => restartApp()}>
-					<img src='https://i.imgur.com/GlN1vGN.jpg' alt='logo img'className='navbar__logo--img'/>
+					<img src='https://i.imgur.com/pntpzEI.png' alt='logo img'className='navbar__logo--img'/>
 				</div>
 				{/*
 				<div className='navbar__menu'>

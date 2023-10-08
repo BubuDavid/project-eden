@@ -21,7 +21,6 @@ const DetailSection = ({ planetName, type, year, distance}) => {
 					</div>
 				</div>
 			</div>
-			<CircleSeparator />
 		</section>
 	)
 }

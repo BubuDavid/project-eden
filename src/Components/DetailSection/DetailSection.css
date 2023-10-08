@@ -1,3 +1,55 @@
+/* Main section styling */
 .detail__section {
-
+	padding: 20px;
+	position: relative;  /* This is to ensure the CircleSeparator is positioned relative to this */
 }
+
+/* Container for all the details */
+.details__container {
+	max-width: 800px;  /* Assuming a max width, can adjust as needed */
+	margin: 0 auto;  /* Center the container */
+}
+
+/* Title styling */
+.details__title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;  /* Spacing between title and boxes */
+}
+
+/* Boxes container styling */
+.details__boxes {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;  /* To ensure boxes stack on smaller screens */
+}
+
+/* Individual box styling */
+.detail__box {
+	flex: 0 1 calc(33.33% - 10px);  /* Each box takes up 1/3 minus some margin */
+	background-color: #ffffff;  /* White box background */
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;  /* Space at the bottom of each box */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* A light shadow for a lifted effect */
+}
+
+/* Key-value styling */
+.detail__key, .detail__value {
+	margin: 0;  /* Removing default margins from p elements */
+}
+
+.detail__key {
+	font-size: 14px;
+	color: #777;  /* Dark gray color for the key */
+	margin-bottom: 5px;  /* Space between key and value */
+}
+
+.detail__value {
+	font-size: 16px;
+	color: #333;  /* Darker color for the value */
+	font-weight: bold;  /* Bold font for emphasis */
+}
+
